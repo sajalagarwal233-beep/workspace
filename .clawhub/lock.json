@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "skills": {
+    "agentmail-cli": {
+      "version": "1.0.0",
+      "installedAt": 1772589287824
+    },
+    "agentmail": {
+      "version": "1.1.1",
+      "installedAt": 1772589544419
+    },
+    "sonoscli": {
+      "version": "1.0.0",
+      "installedAt": 1772589853405
+    },
+    "self-improving-agent": {
+      "version": "1.0.11",
+      "installedAt": 1772590372405
+    }
+  }
+}
