@@ -1,0 +1,46 @@
+display_information:
+  name: OpenClaw
+  description: AI Assistant for Slack - Chat with your personal AI
+  background_color: "#6366f1"
+
+features:
+  bot_user:
+    display_name: OpenClaw
+    username: openclaw
+
+  slash_commands:
+    - command: /openclaw
+      description: Chat with AI assistant
+      usage_hint: your message
+
+oauth_config:
+  scopes:
+    - scope: bot
+      json:
+        chat:write: {}
+        channels:history: {}
+        channels:read: {}
+        groups:history: {}
+        im:history: {}
+        mpim:history: {}
+        users:read: {}
+        app_mentions:read: {}
+        reactions:write: {}
+        reactions:read: {}
+        commands: {}
+        files:write: {}
+        files:read: {}
+
+settings:
+  event_subscriptions:
+    bot_events:
+      - app_mention
+      - message.channels
+      - message.im
+      - message.mpim
+      - reaction_added
+
+  socket_mode_enabled: true
+
+  interactivity:
+    enabled: true
